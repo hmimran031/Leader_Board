@@ -188,3 +188,82 @@ Lates Course Section
   margin-right: 0.34rem;
 }
 /* Main End */
+
+/* --------------
+Media Querie 
+-----------------*/
+
+/* Mobile Device */
+
+@media only screen and (max-width: 688px) {
+  .header-section {
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    color: #000;
+  }
+  .header-area,
+  .navbar ul,
+  .navbar ul li,
+  .navbar ul li a,
+  .player,
+  .blog,
+  .courses,
+  .course-info {
+    flex-direction: column;
+    padding: 0.5rem 0;
+    align-items: center;
+    text-align: center;
+  }
+  .course-duration {
+    margin-top: 1rem;
+  }
+}
+/* Tablet Device */
+
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .header-section {
+    width: 100%;
+    height: 100%;
+  }
+  .container {
+    width: 100%;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+    color: #000;
+  }
+  .header-area,
+  .navbar ul,
+  .navbar ul li,
+  .navbar ul li a,
+  .player,
+  .blog,
+  .courses,
+  .course-info {
+    flex-direction: column;
+    padding: 0.5rem 0;
+    align-items: center;
+    text-align: center;
+  }
+  .course-duration {
+    margin-top: 1rem;
+  }
+}
+
+/* Desktop Device  */
+@media only screen and (min-width: 992px) and (max-width: 1500px) {
+  .header-section {
+    width: 100%;
+    height: 100%;
+  }
+}
